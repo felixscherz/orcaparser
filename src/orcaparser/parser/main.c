@@ -73,7 +73,7 @@ static PyMethodDef OrcaparserMethods[] = {
     {NULL, NULL, 0, NULL}};
 
 static struct PyModuleDef orcaparsermodule = {
-    PyModuleDef_HEAD_INIT, "orcaparser", "Orcaparser python interface", -1,
+    PyModuleDef_HEAD_INIT, "parser", "Orcaparser python interface", -1,
     OrcaparserMethods};
 
 /* static PyMethodDef ParentMethods[] = { */
@@ -83,7 +83,7 @@ static struct PyModuleDef orcaparsermodule = {
 /*     PyModuleDef_HEAD_INIT, "orcaparser", "Orcaparser python interface", -1,
  */
 /*     ParentMethods}; */
-PyMODINIT_FUNC PyInit_parser2(void) { // turns out this name matters
+PyMODINIT_FUNC PyInit_parser(void) { // turns out this name matters
     /* PyObject *parent = PyModule_Create(&parentmodule); */
     return PyModule_Create(&orcaparsermodule);
 
