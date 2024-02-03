@@ -1,5 +1,6 @@
 #ifndef __ORCAPARSER_H__
 #define __ORCAPARSER_H__
+#include <stdio.h>
 typedef struct Element {
     double E;
     double Real;
@@ -8,9 +9,12 @@ typedef struct Element {
     int Spin;
     int Ms;
 } Element;
-extern void parse_element(char *buffer, Element *el);
 typedef struct State {
     long n;
-    struct Element elements[];
+    int n_el;
+    Element **elements;
 } State;
+extern void print_element(Element *element);
+extern void print_state(State *state);
+extern int parse_states(FILE *file, State **states);
 #endif
