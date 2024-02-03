@@ -8,7 +8,7 @@ from setuptools import setup
 #         include_dirs=["./orcaparser"],
 #     )
 # ]
-ext_modules = [Extension("orcaparser.parser", ["orcaparser.c", "main.c"], include_dirs=["."])]
+ext_modules = [Extension("orcaparser.parser2", ["orcaparser.c", "main.c"], include_dirs=["."])]
 
 
 def main():
