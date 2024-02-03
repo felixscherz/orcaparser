@@ -83,10 +83,10 @@ static struct PyModuleDef orcaparsermodule = {
 /*     PyModuleDef_HEAD_INIT, "orcaparser", "Orcaparser python interface", -1,
  */
 /*     ParentMethods}; */
-
-PyMODINIT_FUNC PyInit_orcaparser(void) {
+PyMODINIT_FUNC PyInit_parser(void) { // turns out this name matters
     /* PyObject *parent = PyModule_Create(&parentmodule); */
     return PyModule_Create(&orcaparsermodule);
+
 
     /* PyObject *core = PyModule_Create(&orcaparsermodule); */
     /* return core; */

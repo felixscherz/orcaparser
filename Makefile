@@ -13,5 +13,14 @@ a.out: $(wildcard *.c)
 	clang -c $(HEADERS) $<
 
 
-install:
+install: clean
 	pip install .
+
+clean:
+	rm -rf ./build
+	rm -rf ./orcaparser.egg-info
+	rm -rf ./.pytest_cache/
+	rm -rf ./orcaparser/__pycache__/
+	rm -rf ./tests/__pycache__/
+	rm -rf ./.pytest_cache/
+
