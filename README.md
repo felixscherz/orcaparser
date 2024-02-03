@@ -1,0 +1,9 @@
+# orcaparser
+
+## Installation
+
+```
+pip install .
+```
+
+
