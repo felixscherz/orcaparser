@@ -45,7 +45,6 @@ static PyObject *method_parse_states(PyObject *self, PyObject *args) {
         printf("couldn't open file\n");
         return NULL;
     }
-    printf("opened %s\n", filename);
 
     char buffer[1024];
     char start[1024];
