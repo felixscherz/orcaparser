@@ -21,12 +21,6 @@ class State:
     elements: list[Element]
 
 
-
-{
-    "n": 0,
-    "elements": [{"E": 0.99999, "Real": -0.52498, "Imag": 0.85111, "Root": 0, "Spin": 0, "Ms": 0}],
-}
-
 def element_from_dict(element: dict[str, Any]) -> Element:
     return Element(weight=element["E"], real=element["Real"], imag=element["Imag"], root=element["Root"], spin=element["Spin"], m_s=element["Ms"])
 
